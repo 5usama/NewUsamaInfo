@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USAMA DHUDDI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #000;
+            color: #0f0;
+            overflow-x: hidden;
+            min-height: 100vh;
+            background-image: url('https://files.catbox.moe/oolnnr.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-blend-mode: overlay;
+        }
+
+        .name-box {
+            background-color: rgba(0, 20, 0, 0.7);
+            border: 3px solid #0f0;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 30px auto;
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(5px);
+        }
+
+        .name-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                linear-gradient(90deg, transparent, rgba(0, 255, 0, 0.1), transparent);
+            z-index: -1;
+        }
+
+        .main-title {
+            font-size: 10vw;
+            letter-spacing: 5px;
+            text-shadow: 0 0 10px #0f0;
+            margin: 0;
+            line-height: 1;
+        }
+
+        @media (min-width: 768px) {
+            .main-title {
+                font-size: 60px;
+            }
+        }
+
+        .button-container {
+            width: 100%;
+            padding: 0 5%;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 6vw;
+            margin: 40px 0;
+            text-align: center;
+            color: #0f0;
+            text-shadow: 0 0 8px #0f0;
+            letter-spacing: 3px;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .section-title::before,
+        .section-title::after {
+            content: '//';
+            color: #0f0;
+            margin: 0 10px;
+        }
+
+        .button-grid {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80vw;
+            height: 80vw;
+            max-width: 400px;
+            max-height: 400px;
+            text-decoration: none;
+            color: #000;
+            background-color: #0f0;
+            border-radius: 15px;
+            font-size: 6vw;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 0 0 30px rgba(0, 255, 0, 0.7);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border: 3px solid #0f0;
+            backdrop-filter: blur(2px);
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                to bottom right,
+                transparent, transparent, transparent,
+                rgba(255, 255, 255, 0.1),
+                transparent, transparent, transparent
+            );
+            transform: rotate(30deg);
+            transition: all 0.7s;
+        }
+
+        .btn:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 40px rgba(0, 255, 0, 0.9);
+        }
+
+        .btn:hover::before {
+            left: 100%;
+            top: 100%;
+        }
+
+        .btn span {
+            position: relative;
+            z-index: 1;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        /* Scroll Indicator */
+        .scroll-indicator {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #0f0;
+            font-size: 30px;
+            animation: bounce 2s infinite;
+            text-shadow: 0 0 10px #0f0;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0) translateX(-50%);
+            }
+            40% {
+                transform: translateY(-20px) translateX(-50%);
+            }
+            60% {
+                transform: translateY(-10px) translateX(-50%);
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 480px) {
+            .btn {
+                font-size: 7vw;
+            }
+            .section-title {
+                font-size: 7vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="name-box">
+        <h1 class="main-title">USAMA DHUDDI</h1>
+    </div>
+    
+    <div class="button-container">
+        <h2 class="section-title">WHATSAPP CHANNELS</h2>
+        <div class="button-grid">
+            <a href="https://whatsapp.com/channel/0029VavSK8U8fewp1htKiS21" class="btn"><span>CHANNEL 1</span></a>
+        </div>
+        
+        <h2 class="section-title"></h2>
+        <div class="button-grid">
+            <a href="https://whatsapp.com/channel/0029VbAJEYO77qVLPKx0Sd04" class="btn"><span>CHANNEL 2</span></a>
+        </div>
+        
+        <h2 class="section-title"></h2>
+        <div class="button-grid">
+            <a href="https://whatsapp.com/channel/0029VbAD3gs3rZZVbJV0km1B" class="btn"><span>CHANNEL 3</span></a>
+        </div>
+        
+        <h2 class="section-title">WHATSAPP GROUPS</h2>
+        <div class="button-grid">
+            <a href="https://chat.whatsapp.com/LfmxfyGaRvCKmH0TPPICt7?mode=ac_c" class="btn"><span>GROUP 1</span></a>
+        </div>
+        
+        <h2 class="section-title"></h2>
+        <div class="button-grid">
+            <a href="https://chat.whatsapp.com/DwApYMyV5sc0XJCsxwbjAC?mode=ac_c" class="btn"><span>GROUP 2</span></a>
+        </div>
+        
+        <h2 class="section-title">CONNECT WITH ME</h2>
+        <div class="button-grid">
+            <a href="wa.me//923239601585" class="btn"><span>WHATSAPP</span></a>
+        </div>
+        
+        <h2 class="section-title"></h2>
+        <div class="button-grid">
+            <a href="https://www.facebook.com/share/1Bcdzwoayq/" class="btn"><span>FACEBOOK</span></a>
+        </div>
+        
+        <h2 class="section-title"></h2>
+        <div class="button-grid">
+            <a href="https://youtube.com/@masterusama960?si=FeMHL0qJR0S-ddYu" class="btn"><span>YOUTUBE</span></a>
+        </div>
+    </div>
+
+    <div class="scroll-indicator">▼</div>
+</body>
+  </html>
